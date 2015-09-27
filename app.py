@@ -9,7 +9,6 @@ from twisted.python import log
 
 class MainHandler(cyclone.web.RequestHandler):
     def get(self):
-        raise cyclone.web.HTTPError(413)
         self.write("Hello, world")
 
 
